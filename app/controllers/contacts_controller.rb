@@ -67,8 +67,8 @@ class ContactsController < ApplicationController
       @contact = Contact.find(params[:id])
     end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
+    # Method to manage the params created on contacts table
     def contact_params
-      params.require(:contact).permit(:name, :cellphone)
+      params.require(:contact).permit(:name, :email, :cellphone, :address, :birthdate)
     end
 end
