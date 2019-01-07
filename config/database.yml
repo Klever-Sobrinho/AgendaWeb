@@ -8,8 +8,8 @@ default: &default
 
 development:
   <<: *default
-  database: agendaweb_development
+  database: db_development
 
 test:
   <<: *default
-  database: agendaweb_test
+  database: db_test
