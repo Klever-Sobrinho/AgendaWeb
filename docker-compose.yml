@@ -15,3 +15,6 @@ services:
       - '3000:3000'
     depends_on:
       - 'db'     
+
+#docker-compose run -e "RAILS_ENV=test" rails rspec --format doc -- roda os testes pegando o nome do service "rails"
+#--format doc mostra o que está no context
