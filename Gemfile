@@ -18,12 +18,16 @@ gem 'uglifier', '>= 1.3.0'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
+# Use jquery as the Javascript library
+gem 'jquery-rails'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 # Postgres Database
 gem 'pg'
+# A package manager for the web
+gem 'bower-rails'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
@@ -41,9 +45,14 @@ gem 'bootsnap', '>= 1.1.0', require: false
 group :development, :test do
   # Setting up RSPEC
   gem 'rspec-rails'
+  # Simple one-liner tests
   gem 'shoulda-matchers', :require => false
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  # Easy way to instantiate models
+  gem 'factory_bot_rails'
+  # A library for generating fake data
+  gem 'faker'
 end
 
 group :development do
@@ -53,6 +62,7 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'factory_bot_rails'
 end
 
 group :test do
