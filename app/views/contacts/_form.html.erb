@@ -11,32 +11,32 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :name %>
-    <%= form.text_field :name %>
+    <%= form.text_field :name, class:"form-control" %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :email %>
-    <%= form.text_field :email %>
+    <%= form.text_field :email, class:"form-control" %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :cellphone %>
-    <%= form.text_field :cellphone %>
+    <%= form.text_field :cellphone, class:"form-control" %>
   </div>
 
-  <div class="field">
+   <div class="form-group">
     <%= form.label :birthdate %>
-    <%= form.date_field :birthdate %>
+    <%= form.text_field :birthdate, value: @contact.birthdate.try(:strftime, "%d-%m-%Y"),  id: 'dataNasc', class: "form-control" %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :address %>
-    <%= form.text_field :address %>
+    <%= form.text_field :address, class:"form-control" %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit class:"btn btn-success" %>
   </div>
 <% end %>

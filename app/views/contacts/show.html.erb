@@ -1,29 +1,43 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @contact.name %>
-</p>
+<div class="row">
+  <div class="col-md-12">
+  <h2><%= @contact.name %>
+  </div>
+</div>
 
-<p>
-  <strong>Email:</strong>
-  <%= @contact.email %>
-</p>
+<div class="row">
+  <div class="col-md-6">
+    <%= link_to t("app.edit"), edit_contact_path(@contact), class: "btn btn-primary" %>
+    <%= link_to t("app.back"), contacts_path, class: "btn btn-primary" %>
+  </div>
+</div>
+<hr>
 
-<p>
-  <strong>Cellphone:</strong>
-  <%= @contact.cellphone %>
-</p>
+<dl class="dl-horizontal">
+  <dt>
+    <strong><%= t("activerecord.attributes.contact.birthdate") %>:</strong>
+  </dt>
+  <dd> <%= l(@contact.birthdate, format: :long) %></dd>
+</dl>
 
-<p>
-  <strong>Birthdate:</strong>
-  <%= @contact.birthdate %>
-</p>
+<dl class="dl-horizontal">
+  <dt>
+    <strong><%= t("activerecord.attributes.contact.address") %>:</strong>
+  </dt>
+  <dd> <%= @contact.address %></dd>
+</dl>
 
-<p>
-  <strong>Address:</strong>
-  <%= @contact.address %>
-</p>
+<dl class="dl-horizontal">
+  <dt>
+    <strong><%= t("activerecord.attributes.contact.email") %>:</strong>
+  </dt>
+  <dd> <%= @contact.email %></dd>
+</dl>
 
-<%= link_to 'Edit', edit_contact_path(@contact) %> |
-<%= link_to 'Back', contacts_path %>
+<dl class="dl-horizontal">
+  <dt>
+    <strong><%= t("activerecord.attributes.contact.cellphone") %>:</strong>
+  </dt>
+  <dd> <%= @contact.cellphone %></dd>
+</dl>
