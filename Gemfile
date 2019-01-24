@@ -28,6 +28,14 @@ gem 'jbuilder', '~> 2.5'
 gem 'pg'
 # A package manager for the web
 gem 'bower-rails'
+# Embed the V8 JavaScript interpreter into Ruby
+gem 'therubyracer'
+# The dynamic stylesheet language for Rails
+gem 'less-rails'
+# A toolkit from Twitter designed to kickstart development of web apps and sites
+gem 'twitter-bootstrap-rails'
+# Internationalization Rails
+gem 'rails-i18n'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password

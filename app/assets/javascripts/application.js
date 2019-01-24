@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery-maskedinput/src/jquery.maskedinput.js
 //= require rails-ujs
+//= require twitter/bootstrap
 //= require activestorage
 // require turbolinks
 //= require_tree .
