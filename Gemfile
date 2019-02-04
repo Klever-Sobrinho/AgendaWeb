@@ -36,6 +36,10 @@ gem 'less-rails'
 gem 'twitter-bootstrap-rails'
 # Internationalization Rails
 gem 'rails-i18n'
+# Flexible authentication solution for Rails
+gem 'devise'
+# nternationalization Devise
+gem 'devise-i18n'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
